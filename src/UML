@@ -1,0 +1,23 @@
+@startuml
+interface ReprodutorMusical {
+    + tocar(): void
+    + pausar(): void
+    + selecionarMusica(musica: String): void
+}
+
+interface AparelhoTelefonico {
+    + ligar(): void
+    + atender(): void
+    + iniciarCorreioVoz(): void
+}
+
+interface NavegadorInternet {
+    + exibirPagina(): pagina
+    + adicionarNovaAba(): novaAba
+    + atualizarPagina(): void
+}
+
+class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+}
+
+@enduml
